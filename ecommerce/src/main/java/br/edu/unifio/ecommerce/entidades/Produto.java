@@ -11,8 +11,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
+@Getter 
+@Setter 
 public class Produto {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -24,8 +24,22 @@ public class Produto {
 
     private Short estoque;
 
-    private BigDecimal preco;
+    private double preco;
 
     @ManyToOne
-    private Categoria categoria; 
+    private Categoria categoria;
+
+    public void setPreco(double d) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setPreco'");
+    } 
+}
+public Produto() {
+    // Construtor vazio obrigatório
+}
+
+public Produto(String nome, double preco, Categoria categoria) {
+    this.nome = nome;
+    this.preco = preco;
+    this.categoria = categoria;
 }
