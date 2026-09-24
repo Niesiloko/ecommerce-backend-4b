@@ -30,7 +30,7 @@ public class Produto {
     private Categoria categoria;
 
     public void setPreco(double d) {
-        // TODO Auto-generated method stub
+        
         throw new UnsupportedOperationException("Unimplemented method 'setPreco'");
     } 
 }

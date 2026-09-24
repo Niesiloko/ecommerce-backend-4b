@@ -104,7 +104,7 @@ public class ProdutoRepositorioTests {
 
         // Nova consulta e assert para comprovar a mudança[cite: 6]
         Produto produtoAtualizado = produtoRepositorio.findById(produto.getId()).get();
-        Assertions.assertEquals(120.00, produtoAtualizado.getId().getPreco(), "O valor do produto não foi alterado corretamente");
+        Assertions.assertEquals(120.00, produtoAtualizado.getPreco(), "O valor do produto não foi alterado corretamente");
     }
 
     // 5. Exclusão[cite: 6]
