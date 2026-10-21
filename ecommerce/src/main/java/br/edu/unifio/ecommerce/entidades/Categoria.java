@@ -18,12 +18,11 @@ public class Categoria {
     private String nome;
 
     private String descricao;
-}
 
     public Categoria() {
-        // Construtor vazio obrigatório
     }
 
     public Categoria(String nome) {
         this.nome = nome;
     }
+}

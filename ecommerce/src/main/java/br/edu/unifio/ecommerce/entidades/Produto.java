@@ -1,7 +1,5 @@
 package br.edu.unifio.ecommerce.entidades;
 
-import java.math.BigDecimal;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -29,17 +27,12 @@ public class Produto {
     @ManyToOne
     private Categoria categoria;
 
-    public void setPreco(double d) {
-        
-        throw new UnsupportedOperationException("Unimplemented method 'setPreco'");
-    } 
-}
-public Produto() {
-    // Construtor vazio obrigatório
-}
+    public Produto() {
+    }
 
-public Produto(String nome, double preco, Categoria categoria) {
-    this.nome = nome;
-    this.preco = preco;
-    this.categoria = categoria;
+    public Produto(String nome, double preco, Categoria categoria) {
+        this.nome = nome;
+        this.preco = preco;
+        this.categoria = categoria;
+    }
 }
